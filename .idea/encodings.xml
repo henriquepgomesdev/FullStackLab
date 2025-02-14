@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ui/src/app/calculadora/calculadora.component.html" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/ui/src/app/calculadora/calculadora.component.scss" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/ui/src/app/calculadora/calculadora.component.ts" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/ui/src/app/calculadora/calculadora.service.ts" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/ui/src/app/cdi/cdi.component.html" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/ui/src/app/cdi/cdi.component.scss" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/ui/src/app/cdi/cdi.component.spec.ts" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/ui/src/app/cdi/cdi.component.ts" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/back-end/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/back-end/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/front-end/ui/src/app/calculadora/calculadora.component.html" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/front-end/ui/src/app/calculadora/calculadora.component.scss" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/front-end/ui/src/app/calculadora/calculadora.component.ts" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/front-end/ui/src/app/calculadora/calculadora.service.ts" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/front-end/ui/src/app/cdi/cdi.component.html" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/front-end/ui/src/app/cdi/cdi.component.scss" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/front-end/ui/src/app/cdi/cdi.component.spec.ts" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/front-end/ui/src/app/cdi/cdi.component.ts" charset="ISO-8859-1" />
   </component>
 </project>
