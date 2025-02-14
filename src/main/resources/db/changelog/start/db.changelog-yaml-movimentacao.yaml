@@ -1,0 +1,46 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-table-movimentacao
+      author: henrique
+      preConditions:
+        - onFail: MARK_RAN
+          not:
+            tableExists:
+              tableName: movimentacao
+      changes:
+        - createTable:
+            tableName: movimentacao
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: movimentacao_pkey
+                  name: id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    nullable: false
+                  name: valor
+                  type: DECIMAL(19, 4)
+              - column:
+                  name: configuracao_ativo_id
+                  type: BIGINT
+              - column:
+                  name: data
+                  type: DATE
+              - column:
+                  name: tipo_movimentacao
+                  type: TEXT
+            foreignKeys:
+              - constraintName: fk_movimentacao_configuracao_ativo
+                columns:
+                  - configuracao_ativo_id
+                referencedTableName: configuracao_ativo
+                referencedColumns:
+                  - id
+        - createSequence:
+            sequenceName: seq_movimentacao
+            incrementBy: 1
+            startValue: 1

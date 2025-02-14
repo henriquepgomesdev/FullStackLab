@@ -1,0 +1,39 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-table-configuracao-ativo
+      author: henrique
+      preConditions:
+        - onFail: MARK_RAN
+          not:
+            tableExists:
+              tableName: configuracao_ativo
+      changes:
+        - createTable:
+            tableName: configuracao_ativo
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: configuracao_ativo_pkey
+                  name: id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    nullable: false
+                  name: nome
+                  type: TEXT
+              - column:
+                  name: rendimento_dia
+                  type: DECIMAL(19, 4)
+              - column:
+                  name: rendimento_mes
+                  type: DECIMAL(19, 4)
+              - column:
+                  name: somente_dias_uteis
+                  type: BOOLEAN
+        - createSequence:
+            sequenceName: seq_configuracao_ativo
+            incrementBy: 1
+            startValue: 1

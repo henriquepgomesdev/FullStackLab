@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/start/db.changelog-yaml-user.yaml
+  - include:
+      file: db/changelog/start/db.changelog-yaml-ativo.yaml
+  - include:
+      file: db/changelog/start/db.changelog-yaml-movimentacao.yaml
+  - include:
+      file: db/changelog/start/db.changelog-yaml-cdi.yaml
+  - include:
+      file: db/changelog/start/db.changelog-yaml-selic.yaml

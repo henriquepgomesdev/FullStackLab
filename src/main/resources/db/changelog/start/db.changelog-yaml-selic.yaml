@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-table-selic
+      author: henrique
+      preConditions:
+        - onFail: MARK_RAN
+          not:
+            tableExists:
+              tableName: selic
+      changes:
+        - createTable:
+            tableName: selic
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: selic_pkey
+                  name: id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    nullable: false
+                  name: valor
+                  type: DECIMAL(19, 4)
+              - column:
+                  name: data
+                  type: DATE
+        - createSequence:
+            sequenceName: seq_selic
+            incrementBy: 1
+            startValue: 1

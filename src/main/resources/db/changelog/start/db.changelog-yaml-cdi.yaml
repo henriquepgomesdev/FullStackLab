@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-table-cdi
+      author: henrique
+      preConditions:
+        - onFail: MARK_RAN
+          not:
+            tableExists:
+              tableName: cdi
+      changes:
+        - createTable:
+            tableName: cdi
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: cdi_pkey
+                  name: id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    nullable: false
+                  name: valor
+                  type: DECIMAL(19, 4)
+              - column:
+                  name: data
+                  type: DATE
+        - createSequence:
+            sequenceName: seq_cdi
+            incrementBy: 1
+            startValue: 1
